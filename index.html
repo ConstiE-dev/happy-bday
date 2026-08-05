@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Happy Birthday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="password-screen" class="password-screen">
+    <form id="password-form" class="password-form">
+      <h1>🔒 Enter Password</h1>
+      <input type="password" id="password-input" placeholder="Password" autocomplete="off" autofocus>
+      <button type="submit">Unlock</button>
+      <p id="password-error" class="password-error" hidden>Incorrect password, try again.</p>
+    </form>
+  </div>
+
+  <main id="content" class="content" hidden>
+    <img src="happy_bd.png" alt="Happy Birthday" class="hero-image">
+    <div class="video-wrapper">
+      <video id="video" controls playsinline preload="metadata">
+        <source src="video-compressed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
